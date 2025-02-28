@@ -10,6 +10,6 @@ export class TaskController {
     }
     @Post()
     create(@Body() task: TaskDto) {
-     
+     this.taskService.create(task);
     }
 }
