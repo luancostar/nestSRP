@@ -8,3 +8,7 @@ export class TaskDto {
     expirationDate: Date;
 }
 
+export interface FindALlParameters {
+    title: string;
+    status: string;
+}
