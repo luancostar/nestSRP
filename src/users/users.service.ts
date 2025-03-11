@@ -17,5 +17,6 @@ export class UsersService {
         newUser.id = uuid();
         newUser.password = bcryptHashSync(newUser.password, 10);
         this.users.push(newUser);
+        console.log(this.users);
     }
 }
